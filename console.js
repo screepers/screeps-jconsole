@@ -82,7 +82,7 @@ sock.onclose = function () {
     sock = new sockjs('https://screeps.com/socket');
 };
 
-var contains = function(str, array) {
+let contains = function(str, array) {
 	var search = str.toLowerCase();
 	for ( var i = 0; i < array.length; i++ ) {
 		if ( search.indexOf(array[i].toLowerCase()) >= 0 ) return true;
