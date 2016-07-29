@@ -54,22 +54,22 @@ sock.onmessage = function (message) {
                 let messages = json[1].messages;
                 if(messages.log) {
                     for(let log of messages.log) {
-						var when = moment(message.timeStamp);
+                        let when = moment(message.timeStamp);
 						
-						if ( contains(log, ['danger', 'error']) ) {						
-							console.log(('[' + when.format(dateFormat) + ']').gray, log.red);
-						} else if ( contains(log, ['warning', 'problem']) ) {	
-							console.log(('[' + when.format(dateFormat) + ']').gray, log.yellow);
-						} else {
-							console.log(('[' + when.format(dateFormat) + ']').gray, log.white);							
-						}
+                        if ( contains(log, ['danger', 'error']) ) {						
+                            console.log(('[' + when.format(dateFormat) + ']').gray, log.red);
+                        } else if ( contains(log, ['warning', 'problem']) ) {	
+                            console.log(('[' + when.format(dateFormat) + ']').gray, log.yellow);
+                        } else {
+                            console.log(('[' + when.format(dateFormat) + ']').gray, log.white);							
+                        }
                     }
                     for(let result of messages.results) {						
-						console.log(result);
+                        console.log(result);
                     }
                 }
             } else if(json[1].error) {
-				console.log(json[1].error.red);
+                console.log(json[1].error.red);
             }
         }
 
