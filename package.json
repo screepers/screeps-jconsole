@@ -1,0 +1,31 @@
+{
+  "name": "screeps-jconsole",
+  "version": "0.1.0",
+  "description": "Node based console for Screeps MMORPG based on screeps-console by stargateur",
+  "author": "BarryOSeven <barryoseven@gmx.com>",
+  "contributors": [{
+	  "name": "stargateur (creator)",
+	  "email": "antoine.plaskowski@epitech.eu"
+  },
+  {
+    "name": "camedo"
+  }],
+  "main": "console.js",
+  "scripts": {
+    "start": "node console.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "screeps",
+    "console",
+    "console2"
+  ],
+  "author": "= <=>",
+  "license": "MIT",
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "moment": "^2.14.1",
+    "request": "^2.74.0",
+    "sockjs-client": "^1.1.1"
+  }
+}
